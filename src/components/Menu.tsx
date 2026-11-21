@@ -35,7 +35,7 @@ const PAGES: MenuPage[] = [
         {
           title: "Tilltugg",
           items: [
-            { name: "Hot kycklingspett", tag: "populär", price: "118", desc: "Marinerad med ingefära, vitlök & chili" },
+            { name: "Hot kycklingspett", price: "118", desc: "Marinerad med ingefära, vitlök & chili" },
             { name: "Sött umami-kycklingspett", price: "118", desc: "Marinerad i teriyakisås" },
             { name: "Vårrullar", tag: "vegetarisk", price: "89", desc: "Krispiga, med grönsaker & sötsur sås" },
             { name: "Kycklingvingar", price: "99", desc: "Krispiga vingar med aioli" },
@@ -49,10 +49,11 @@ const PAGES: MenuPage[] = [
         {
           title: "Varmrätter",
           items: [
-            { name: "Bräserat nötkött", tag: "populär", price: "189", desc: "Långkokt nötkött i kryddor med svamp & morot. Serveras med jasminris & sallad." },
-            { name: "Krämig kycklinggryta", price: "169", desc: "Med morötter, gröna ärtor, lök och en blandning av kryddor. Serveras med jasminris & sallad." },
-            { name: "Sarisha gambas", tag: "populär", price: "139 / 169", desc: "Räkor marinerade i sarisha (senapsolja), vitlök & koriander. Serveras med bröd & aioli." },
-            { name: "Fish & chips", price: "149", desc: "Krispig fisk, pommes, remoulad & citron." },
+            { name: "Långkokt Guinnessgryta", price: "199", desc: "Mör högrev långkokt i Guinness med timjan, vitlök, lök, morötter och svamp, avrundad med grädde. Serveras med surdegsbröd." },
+            { name: "Fish & chips", price: "199", desc: "Tempurafriterad torskfilé, pommes, remoulad, citron & dill." },
+            { name: "Klassisk ostburgare", price: "199", desc: "180g högrevsburgare med smält cheddar, krämig burgersås, sallad, tomat, picklad lök och saltgurka. Serveras med pommes frites och ketchup." },
+            { name: "Krispig vegoburgare", tag: "vegetarisk", price: "159", desc: "Friterad vegetarisk burgare av soja med smält cheddar, krämig burgersås, sallad, tomat, picklad lök och saltgurka. Serveras med pommes frites och ketchup." },
+            { name: "Sarisha gambas", price: "139 / 169", desc: "Räkor marinerade i sarisha (senapsolja), vitlök & koriander. Serveras med bröd & aioli." },
             { name: "Vegosoppa", tag: "vegansk", price: "119", desc: "Gul linssoppa med kokosmjölk, vitlök, lök & tomat. Serveras med surdegsbröd." },
           ],
         },
@@ -63,10 +64,9 @@ const PAGES: MenuPage[] = [
           hint: "surdegsbröd, med saltgurka, aioli & sallad",
           cols: 2,
           items: [
-            { name: "Spicy Tuna", tag: "populär", price: "139", desc: "Gochujang-tonfisk, salladslök & mozzarella" },
-            { name: "Mango Special Triple Cheese", price: "159", desc: "Kryddig & syrlig mangosylt, mozzarella, västerbottensost & brie. Finns vegetarisk. Populär!" },
-            { name: "Hot Ham", tag: "populär", price: "139", desc: "Sambal-aioli, skinka & mozzarella" },
-            { name: "Miso Veggie Melt", price: "149", desc: "Rött misosmör, honungsmarinerad zucchini, soltorkade tomater & mozzarella. Finns vegetarisk." },
+            { name: "Spicy Tuna", price: "139", desc: "Gochujang-tonfisk, salladslök & mozzarella" },
+            { name: "Mango Special Triple Cheese", tag: "vegetarisk", price: "159", desc: "Kryddig & syrlig mangosylt, mozzarella, västerbottensost & brie." },
+            { name: "Hot Ham", price: "139", desc: "Sambal-aioli, skinka & mozzarella" },
           ],
         },
       ],
@@ -76,7 +76,6 @@ const PAGES: MenuPage[] = [
           cols: 2,
           items: [
             { name: "Bröd / glutenfritt bröd", price: "35" },
-            { name: "Ris", price: "35" },
             { name: "Sallad", price: "29" },
           ],
         },
@@ -87,7 +86,7 @@ const PAGES: MenuPage[] = [
     id: "dryck",
     label: "Dryck",
     subtitle: "DRYCK",
-    footer: "Priser i SEK",
+    footer: "Fråga oss om du är allergisk mot något · Priser i SEK",
     rows: [
       [
         {
@@ -95,14 +94,15 @@ const PAGES: MenuPage[] = [
           cols: 2,
           items: [
             { name: "Blind Mango", tag: "signatur", price: "149", desc: "Gin, triple sec, limoncello, mynta, mango & bubbel" },
-            { name: "Tropical Heat", tag: "signatur", price: "149", desc: "Tequila, rom, lime & chili. Lite stark!" },
+            { name: "Salsa sour", tag: "signatur", price: "149", desc: "Tequila, rom, lime, jalapeño, tomat. Lite stark!" },
             { name: "Dacca", tag: "signatur", price: "169", desc: "Mörk rom, kaffelikör & tonic" },
+            { name: "Tom collins", price: "119", desc: "Gin, sodavatten & citron" },
+            { name: "Paloma", price: "129", desc: "Tequila, grapefrukt, sodavatten & lime" },
+            { name: "Lynchburg lemonade", price: "149", desc: "Tennessee whiskey, triple sec, citronläsk & citron" },
+            { name: "Peppar cola", price: "129", desc: "Vodka, jalapeño & cola" },
             { name: "Aperol Spritz", price: "129", desc: "Aperol, bubbel & apelsin" },
             { name: "Hugo", price: "129", desc: "Fläderlikör, mynta & bubbel" },
             { name: "Limoncello Spritz", price: "129", desc: "Limoncello, citron & bubbel" },
-            { name: "Manhattan", price: "149", desc: "Whiskey, söt vermouth & bitter" },
-            { name: "Martini", price: "169", desc: "Gin, torr vermouth & oliver" },
-            { name: "Old Fashioned", price: "139", desc: "Bourbon & bitter" },
             { name: "Take a Break!", price: "179", desc: "Vodka, tequila, gin, rom, triple sec, cola & lime" },
             { name: "Fizzy Pop", price: "129", desc: "Vodka, tuggummi, lime & curaçao" },
             { name: "Tequila Sunrise", price: "139", desc: "Tequila, apelsin, grenadin & lime" },
@@ -110,6 +110,9 @@ const PAGES: MenuPage[] = [
             { name: "Red Bull & vodka", price: "119" },
             { name: "Screwdriver", price: "119", desc: "Vodka & apelsinjuice" },
             { name: "Cranberry & vodka", price: "119", desc: "Vodka & tranbärsjuice" },
+            { name: "Manhattan", price: "149", desc: "Whiskey, söt vermouth & bitter" },
+            { name: "Martini", price: "169", desc: "Gin, torr vermouth & oliver" },
+            { name: "Old Fashioned", price: "139", desc: "Bourbon & bitter" },
           ],
         },
       ],
@@ -209,7 +212,6 @@ const MUTED = "text-[#4d4e52] dark:text-[#b4b5b8]";
 
 function ItemRow({ item }: { item: Item }) {
   return (
-    
     <li className="break-inside-avoid py-2.5">
       <div className="flex items-baseline gap-2">
         <span className="font-semibold leading-snug">{item.name}</span>
@@ -254,65 +256,65 @@ function CategoryCard({ cat }: { cat: Category }) {
 export default function Menu() {
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Blind Mango Bar</title>
         <meta name="description" content="Utforska vår meny på Blind Mango Bar." />
       </Helmet>
-    <section
-      id="menu"
-      className="scroll-mt-20 bg-[#F1EBDA] px-4 py-20 text-[#0E0D06] transition-colors duration-500 dark:bg-[#0A0A04] dark:text-[#FAF5E5] sm:px-6 sm:py-24"
-    >
-      <div className="mx-auto max-w-5xl">
-        {/* Intro + jump pills */}
-        <div className="text-center">
-          <h2 className="font-mono text-3xl font-bold uppercase tracking-[0.3em] sm:text-5xl">
-            Blind Mango
-          </h2>
-          <p className={`mt-2 font-mono text-xs uppercase tracking-[0.5em] ${MUTED}`}>Meny</p>
+      <section
+        id="menu"
+        className="scroll-mt-20 bg-[#F1EBDA] px-4 py-20 text-[#0E0D06] transition-colors duration-500 dark:bg-[#0A0A04] dark:text-[#FAF5E5] sm:px-6 sm:py-24"
+      >
+        <div className="mx-auto max-w-5xl">
+          {/* Intro + jump pills */}
+          <div className="text-center">
+            <h2 className="font-mono text-3xl font-bold uppercase tracking-[0.3em] sm:text-5xl">
+              Blind Mango
+            </h2>
+            <p className={`mt-2 font-mono text-xs uppercase tracking-[0.5em] ${MUTED}`}>Meny</p>
 
-          <nav className="mt-8 flex flex-wrap justify-center gap-2">
-            {PAGES.map((p) => (
-              <a
-                key={p.id}
-                href={`#${p.id}`}
-                className="rounded-full bg-[#DCA54A] px-5 py-2 text-sm font-bold uppercase tracking-widest text-[#0E0D06] transition-transform hover:scale-105 active:scale-95"
-              >
-                {p.label}
-              </a>
-            ))}
-          </nav>
-        </div>
-
-        {/* Pages in order */}
-        {PAGES.map((page) => (
-          <div key={page.id} id={page.id} className="scroll-mt-24 pt-16">
-            <div className="mb-8 text-center">
-              <h3 className="font-mono text-2xl font-bold uppercase tracking-[0.3em] sm:text-3xl">
-                Blind Mango
-              </h3>
-              <p className={`mt-1 font-mono text-xs uppercase tracking-[0.5em] ${MUTED}`}>
-                {page.subtitle}
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              {page.rows.map((row, i) => (
-                <div
-                  key={i}
-                  className={`grid gap-6 ${row.length > 1 ? "md:grid-cols-2" : ""}`}
+            <nav className="mt-8 flex flex-wrap justify-center gap-2">
+              {PAGES.map((p) => (
+                <a
+                  key={p.id}
+                  href={`#${p.id}`}
+                  className="rounded-full bg-[#DCA54A] px-5 py-2 text-sm font-bold uppercase tracking-widest text-[#0E0D06] transition-transform hover:scale-105 active:scale-95"
                 >
-                  {row.map((cat) => (
-                    <CategoryCard key={cat.title} cat={cat} />
-                  ))}
-                </div>
+                  {p.label}
+                </a>
               ))}
-            </div>
-
-            <p className={`mt-8 text-center font-mono text-xs ${MUTED}`}>{page.footer}</p>
+            </nav>
           </div>
-        ))}
-      </div>
-    </section>
+
+          {/* Pages in order */}
+          {PAGES.map((page) => (
+            <div key={page.id} id={page.id} className="scroll-mt-24 pt-16">
+              <div className="mb-8 text-center">
+                <h3 className="font-mono text-2xl font-bold uppercase tracking-[0.3em] sm:text-3xl">
+                  Blind Mango
+                </h3>
+                <p className={`mt-1 font-mono text-xs uppercase tracking-[0.5em] ${MUTED}`}>
+                  {page.subtitle}
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                {page.rows.map((row, i) => (
+                  <div
+                    key={i}
+                    className={`grid gap-6 ${row.length > 1 ? "md:grid-cols-2" : ""}`}
+                  >
+                    {row.map((cat) => (
+                      <CategoryCard key={cat.title} cat={cat} />
+                    ))}
+                  </div>
+                ))}
+              </div>
+
+              <p className={`mt-8 text-center font-mono text-xs ${MUTED}`}>{page.footer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }
