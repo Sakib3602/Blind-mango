@@ -50,8 +50,8 @@ const PAGES: MenuPage[] = [
           title: "Varmrätter",
           items: [
             { name: "Långkokt Guinnessgryta", price: "199", desc: "Mör högrev långkokt i Guinness med timjan, vitlök, lök, morötter och svamp, avrundad med grädde. Serveras med surdegsbröd." },
-            { name: "Fish & chips", price: "199", desc: "Tempurafriterad torskfilé, pommes, remoulad, citron & dill." },
-            { name: "Klassisk ostburgare", price: "199", desc: "180g högrevsburgare med smält cheddar, krämig burgersås, sallad, tomat, picklad lök och saltgurka. Serveras med pommes frites och ketchup." },
+            { name: "Fish & chips", price: "175", desc: "Tempurafriterad torskfilé, pommes, remoulad, citron & dill." },
+            { name: "Klassisk ostburgare", price: "185", desc: "180g högrevsburgare med smält cheddar, krämig burgersås, sallad, tomat, picklad lök och saltgurka. Serveras med pommes frites och ketchup." },
             { name: "Krispig vegoburgare", tag: "vegetarisk", price: "159", desc: "Friterad vegetarisk burgare av soja med smält cheddar, krämig burgersås, sallad, tomat, picklad lök och saltgurka. Serveras med pommes frites och ketchup." },
             { name: "Sarisha gambas", price: "139 / 169", desc: "Räkor marinerade i sarisha (senapsolja), vitlök & koriander. Serveras med bröd & aioli." },
             { name: "Vegosoppa", tag: "vegansk", price: "119", desc: "Gul linssoppa med kokosmjölk, vitlök, lök & tomat. Serveras med surdegsbröd." },
