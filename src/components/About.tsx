@@ -1,26 +1,30 @@
 import { Link } from "react-router-dom";
 
-
-
 export default function About() {
   return (
     <section
       id="content"
       className="bg-[#FAF5E5] px-6 py-12 text-[#0E0D06] transition-colors duration-500 dark:bg-[#0E0D06] dark:text-[#FAF5E5] sm:py-16"
     >
-      <div className="mx-auto grid max-w-5xl items-start gap-6 md:grid-cols-[1fr_1.5fr] md:gap-14">
+     <div className="mx-auto flex max-w-5xl flex-col items-center justify-center text-center">
         {/* Title */}
-        <div className="text-left">
+        <div className="flex flex-col items-center justify-center text-center">
           <h2 className="text-2xl font-bold leading-snug sm:text-3xl">
             Upptäck den mysiga atmosfären på{" "}
-            <span className="text-[#9a6a10] dark:text-[#DCA54A]">Blind Mango!</span>
+            <span className="text-[#9a6a10] dark:text-[#DCA54A]">
+              Blind Mango!
+            </span>
           </h2>
           <span className="mt-4 block h-1 w-12 rounded-full bg-[#DCA54A]" />
         </div>
 
-        {/* Text */}
+        {/* Description - Hidden for now, keep for future use */}
+
+        {/*
         <div className="space-y-3 text-left text-sm leading-relaxed text-[#2b2a24] dark:text-[#E3E3E3] sm:text-base">
-          <p className="font-semibold">Upptäck den mysiga atmosfären på Blind Mango!</p>
+          <p className="font-semibold">
+            Upptäck den mysiga atmosfären på Blind Mango!
+          </p>
           <p>
             Beläget på Nordenskiöldsgatan 3 är detta platsen där lokalborna kommer för att
             lämna alla bekymmer bakom sig!
@@ -38,6 +42,7 @@ export default function About() {
             vilket gör varje besök till en upplevelse för både smaklökarna och sinnena.
           </p>
         </div>
+        */}
       </div>
 
       <div className="mt-8 flex justify-center">

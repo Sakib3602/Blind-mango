@@ -67,15 +67,8 @@ export default function Nav({
   menuHref = "/menu",
   bookHref = "/book",
   address = "Nordenskiöldsgatan 3",
-  foodoraHref = "https://www.foodora.se/restaurant/mpru/the-blind-mango",
-  uberEatsHref = "https://www.ubereats.com/se-en/store/blind-mango-bar/IZ7EoSXKT0GIYQPGKrEOQg?srsltid=AfmBOopBfvBTKTe_snEd-X7cnzWDFht3rzdp1p8nplTbi-JNLz8YI2qw",
-  woltHref = "https://wolt.com/en/swe/goteborg/restaurant/blind-mango-bar",
+  
 }: NavProps) {
-  const deliveryLinks = [
-    { name: "Foodora", href: foodoraHref },
-    { name: "Uber Eats", href: uberEatsHref },
-    { name: "Wolt Food", href: woltHref },
-  ];
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -223,7 +216,7 @@ export default function Nav({
           </Link>
 
           {/* delivery platforms */}
-          <div style={item(1)} className={`flex flex-col gap-4 ${itemClass}`}>
+          {/* <div style={item(1)} className={`flex flex-col gap-4 ${itemClass}`}>
             {deliveryLinks.map((d) => (
               <a
                 key={d.name}
@@ -248,7 +241,7 @@ export default function Nav({
                 </svg>
               </a>
             ))}
-          </div>
+          </div> */}
 
           <span
             style={item(2)}
